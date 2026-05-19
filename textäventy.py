@@ -43,7 +43,7 @@ def room_4():
             room_1()
         else:
             print("hejdå")
-    elif choice_4 == "öppningen": 
+    elif choice == "öppningen": 
         room_7()
     else:
         room_4
@@ -220,7 +220,7 @@ def room_12():
     if guess=="morgondagen":
         print("Hur är det möjligt ingen har klarat det tidigare åh nej.")
         print("Hexan blir till aska precis som spider man i infinty war eller end game kom inte ihåg vilken. där hon stod ligger det nu en nyckel. Du tar upp den och låser upp back dören när du öppnar den är du tillbaka till ditt rum.")
-        input("Du vann vill du spela igen? ja eller nej?")
+        gameover=input("Du vann vill du spela igen? ja eller nej?")
         if gameover=="ja":
             room_1()
         else:
@@ -237,5 +237,50 @@ def room_12():
     
 def room_13():
     print("Du går till dören och öppnar den ser du ett mörker på andra sidan.")
-    input("går du i? [ja/nej]")
+    choice = input("går du i? [ja/nej]")
+    if choice == "Ja":
+        print("Du vandrar igen dören in till ditt hus. Bort från skogen.")
+        gameover=input("Du vann vill du spela igen? ja eller nej?")
+        if gameover=="ja":
+            room_1()
+        else:
+            print("hejdå")
+    if choice == "nej":
+        print("Du får hjärt attack och dör.")
+        gameover=input("Vill du spela igen? ja eller nej?")
+        if gameover=="ja":
+            room_1()
+        else:
+            print("hejdå")
+def room_14():
+    print("Du ser en sovande katt")
+    choice = input("Väcker du den? Ja/nej ")
+    if choice == "Ja":
+        print("Du går förbi den och ser ett ljus du springer ditt och ... vacknar upp från din dröm")
+        gameover=input("Du vann vill du spela igen? ja eller nej?")
+        if gameover=="ja":
+            room_1()
+        else:
+            print("hejdå")
+    else:
+        print("Katten vaknar och attackerar dig. Han klöser dig på halsen och du dör. ")
+        gameover=input("Vill du spela igen? ja eller nej?")
+        if gameover=="ja":
+            room_1()
+        else:
+            print("hejdå")
+def room_15():
+    choice = input("Du går upp till Gorillan. Han frågar dig. Vilket djur i djungeln går illa? ")
+    if choice =="gorilla":
+        print("Wow du hade rätt nu måste jag inte mörda dig hohohho. Det där är vägen ut från skogen. Han pekar mot dören.")
+        room_13
+    else:
+        print(" jag kommer döda dig. Han slitter dig i bittar.")
+        gameover=input("Vill du spela igen? ja eller nej?")
+        if gameover=="ja":
+            room_1()
+        else:
+            print("hejdå")
+
+
 room_1()
