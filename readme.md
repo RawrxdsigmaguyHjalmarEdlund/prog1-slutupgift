@@ -8,8 +8,7 @@ Jag har gjort ett text äventyr. jag använde mig av def för att skriva kod.
 
 ## Bakgrund
 
-Jag började med att försöka hitta på något att göra. Jag googlade och ett text äventyr kom upp som en bra sak att göra. jag letade efter inperation och jag hittade någon på github som använde def funktionen. Jag började skrva min kod genom att definera ett rum och i det rummet får man skriva vad man vill göra, baserat på vad man gör så blir man skickat till ett annat rum. kolla på bilden om du tycker jag är dålig på att förklara.
-
+Jag började med att försöka hitta på något att göra. Jag googlade och ett text äventyr kom upp som en bra sak att göra. jag letade efter inperation och jag hittade någon på github som använde def funktionen. Jag började skrva min kod genom att definera ett rum och i det rummet får man skriva vad man vill göra, baserat på vad man gör så blir man skickat till ett annat rum. kolla på bilden om du tycker jag är dålig på att förklara. I def funktionenrna finns det input funktioner som man skriver vad man vill göra då finns det en if funktion som antingen släpper in dig i ett annat rum, du dör eller skriver den om rummet  du är i.
 
 ![Sexig kod](./sexigkod.png)
 
